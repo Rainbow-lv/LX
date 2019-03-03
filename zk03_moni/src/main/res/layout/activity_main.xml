@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+
+        <RadioButton
+            android:id="@+id/radio_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="热销新品"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/radio_fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:text="魔丽时尚"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/radio_lif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:text="品质生活"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"/>
+    </RadioGroup>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="3dp">
+
+    </com.youth.banner.Banner>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp">
+    </FrameLayout>
+</LinearLayout>
